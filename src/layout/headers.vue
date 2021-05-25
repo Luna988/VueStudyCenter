@@ -27,7 +27,7 @@ export default {
   name: "headers",
   data() {
     return {
-      defaultLogo: require("@/assets/logo.png"),
+      defaultLogo: require("@/assets/logo.jpeg"),
     };
   },
 };
@@ -40,17 +40,17 @@ export default {
 }
 .layout-logo {
   width: 100px;
-  height: 30px;
+  height: 60px;
   background: #5b6270;
   border-radius: 3px;
   float: left;
   position: relative;
-  top: 15px;
+  top: 2px;
   left: 20px;
   .logo-img {
     width: 100px;
     min-width: 100px;
-    height: 30px;
+    height: 60px;
   }
 }
 </style>

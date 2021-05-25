@@ -2,9 +2,11 @@
   <div>
     <h2>{{msg2}}</h2>
     <h3>{{parent}}</h3>
+    <Children3 />
   </div>
 </template>
 <script>
+import Children3 from './children3.vue'
 export default {
   name: "children2",
   data() {
@@ -18,29 +20,32 @@ export default {
       required: true,
     },
   },
-  beforeCreate(){
-    console.log('子组件children2 beforeCreate')
-  },
-  created(){
-    console.log('子组件children2 created')
-  },
-  beforeMount(){
-    console.log('子组件children2 beforeMount')
-  },
-  mounted(){
-    console.log('子组件children2 mounted')
-  },
-  beforeUpdate(){
-    console.log('子组件children2 beforeUpdate')
-  },
-  updated(){
-    console.log('子组件children2 updated')
-  },
-  beforeDestroy(){
-    console.log('子组件children2 beforeDestroy')
-  },
-  destroyed(){
-    console.log('子组件children2 destroyed')
+  components: {
+    Children3
   }
+  // beforeCreate(){
+  //   console.log('子组件children2 beforeCreate')
+  // },
+  // created(){
+  //   console.log('子组件children2 created')
+  // },
+  // beforeMount(){
+  //   console.log('子组件children2 beforeMount')
+  // },
+  // mounted(){
+  //   console.log('子组件children2 mounted')
+  // },
+  // beforeUpdate(){
+  //   console.log('子组件children2 beforeUpdate')
+  // },
+  // updated(){
+  //   console.log('子组件children2 updated')
+  // },
+  // beforeDestroy(){
+  //   console.log('子组件children2 beforeDestroy')
+  // },
+  // destroyed(){
+  //   console.log('子组件children2 destroyed')
+  // }
 };
 </script>
