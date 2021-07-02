@@ -2,8 +2,9 @@
   <div>
     <h1>{{msg}}</h1>
     <!-- <button @click="change">改变自组件</button> -->
-    <children1 :parent="parents" :type='type' :on-change="handlePropChange"></children1>
-    <children2 :parent="parents"></children2>
+    <!-- <children1 :parent="parents" :type='type' :on-change="handlePropChange"></children1> -->
+    <!-- <children2 :parent="parents"></children2> -->
+    <children3 label="姓名" class='name-input' placeholder="请输入姓名呢～～～" test-attrs="$attrs" />
     <button @click="handleChange">按钮</button>
     <div v-is="show">
       4324
@@ -44,8 +45,10 @@ export default {
   },
   components: {
     // AsyncList,
-    children1: () => import(/* webpackChunkName: 'children1' */ "./children1"),
-    children2: () => import(/* webpackChunkName: 'children2' */ "./children2"),
+    // children1: () => import(/* webpackChunkName: 'children1' */ "./children1"),
+    // children2: () => import(/* webpackChunkName: 'children2' */ "./children2"),
+    children3: () => import(/* webpackChunkName: 'child高级' */ "./child高级"),
+    
   },
   methods: {
     handleChange(){
